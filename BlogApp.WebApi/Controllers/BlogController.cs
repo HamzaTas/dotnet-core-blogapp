@@ -16,18 +16,20 @@ namespace BlogApp.WebApi.Controllers
     {
         private readonly ILogger<BlogController> _logger;
 
+        private IUnitOfWork _unitOfWork;
         private IBlogRepository _repository;
 
-        public BlogController(ILogger<BlogController> logger, IBlogRepository repository)
+        public BlogController(ILogger<BlogController> logger, IBlogRepository repository, IUnitOfWork unitOfWork)
         {
             _logger = logger;
             _repository = repository;
+            _unitOfWork = unitOfWork;
         }
 
         [HttpGet]
-        public List<Blog> Get()
+        public List<Comment> Get()
         {
-            return _repository.GetAll().ToList();
+            return _unitOfWork.Comments.GetAll().ToList();
         }
     }
 }

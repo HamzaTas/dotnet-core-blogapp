@@ -31,6 +31,7 @@ namespace BlogApp.WebApi
             services.AddTransient<IBlogRepository, EfBlogRepository>();
             services.AddTransient<ICategoryRepository, EfCategoryRepository>();
             services.AddTransient<ICommentRepository, EfCommentRepository>();
+            services.AddTransient<IUnitOfWork, EfUnitOfWork>();
             services.AddControllers();
         }
 
