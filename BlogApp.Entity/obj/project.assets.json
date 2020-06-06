@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hamza.tas\\source\\repos\\BlogApp\\BlogApp.Entity\\BlogApp.Entity.csproj",
+      "projectUniqueName": "C:\\Users\\hamza.tas\\Desktop\\Core\\Projects\\dotnet-core-blogapp\\BlogApp.Entity\\BlogApp.Entity.csproj",
       "projectName": "BlogApp.Entity",
-      "projectPath": "C:\\Users\\hamza.tas\\source\\repos\\BlogApp\\BlogApp.Entity\\BlogApp.Entity.csproj",
+      "projectPath": "C:\\Users\\hamza.tas\\Desktop\\Core\\Projects\\dotnet-core-blogapp\\BlogApp.Entity\\BlogApp.Entity.csproj",
       "packagesPath": "C:\\Users\\hamza.tas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hamza.tas\\source\\repos\\BlogApp\\BlogApp.Entity\\obj\\",
+      "outputPath": "C:\\Users\\hamza.tas\\Desktop\\Core\\Projects\\dotnet-core-blogapp\\BlogApp.Entity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

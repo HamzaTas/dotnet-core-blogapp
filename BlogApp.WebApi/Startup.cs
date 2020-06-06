@@ -2,9 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BlogApp.Repository.Abstract;
+using BlogApp.Repository.Concrete.EntityFramework;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -24,6 +27,8 @@ namespace BlogApp.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<BlogContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("BlogApp.WebApi")));
+            services.AddTransient<IBlogRepository, efBlogRepository>();
             services.AddControllers();
         }
 
@@ -34,6 +39,8 @@ namespace BlogApp.WebApi
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            FakeData.EnsurePopulated(app); // Control of pending migration automatically
 
             app.UseRouting();
 

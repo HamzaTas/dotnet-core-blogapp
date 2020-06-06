@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S60/7m807MLjzBXPpUAvkMDBmUOna3y7oloC1GSkEenpsaB+KalPST+aaAB+8jYQY7vFYkcMFUVFEDXm+5O0DA==",
+  "dgSpecHash": "xfLafIyb94vmKHbflmuW97X9pUOKr9wefUYzSvAST+qzoDpbiOTPGR3Z9Kr9AGti1zKNbkgXfhvs6L/+KXHkzA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hamza.tas\\source\\repos\\BlogApp\\BlogApp.Entity\\BlogApp.Entity.csproj",
+  "projectFilePath": "C:\\Users\\hamza.tas\\Desktop\\Core\\Projects\\dotnet-core-blogapp\\BlogApp.Entity\\BlogApp.Entity.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,0 +1,9 @@
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.Entity\bin\Debug\netcoreapp3.1\BlogApp.Entity.deps.json
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.Entity\bin\Debug\netcoreapp3.1\BlogApp.Entity.dll
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.Entity\bin\Debug\netcoreapp3.1\BlogApp.Entity.pdb
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.Entity\obj\Debug\netcoreapp3.1\BlogApp.Entity.AssemblyInfoInputs.cache
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.Entity\obj\Debug\netcoreapp3.1\BlogApp.Entity.AssemblyInfo.cs
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.Entity\obj\Debug\netcoreapp3.1\BlogApp.Entity.csproj.CoreCompileInputs.cache
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.Entity\obj\Debug\netcoreapp3.1\BlogApp.Entity.dll
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.Entity\obj\Debug\netcoreapp3.1\BlogApp.Entity.pdb
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.Entity\obj\Debug\netcoreapp3.1\BlogApp.Entity.csprojAssemblyReference.cache
