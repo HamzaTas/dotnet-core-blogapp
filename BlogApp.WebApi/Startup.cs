@@ -28,7 +28,9 @@ namespace BlogApp.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<BlogContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("BlogApp.WebApi")));
-            services.AddTransient<IBlogRepository, efBlogRepository>();
+            services.AddTransient<IBlogRepository, EfBlogRepository>();
+            services.AddTransient<ICategoryRepository, EfCategoryRepository>();
+            services.AddTransient<ICommentRepository, EfCommentRepository>();
             services.AddControllers();
         }
 

@@ -2,12 +2,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace BlogApp.Repository.Abstract
 {
-    public interface IBlogRepository
+    public interface IBlogRepository:IGenericRepository<Blog>
     {
-        public IQueryable<Blog> Blogs { get;}
+        List<Blog> GetTop10Blogs();
     }
 }

@@ -4,25 +4,21 @@ using System.Linq;
 using System.Threading.Tasks;
 using BlogApp.Entity;
 using BlogApp.Repository.Abstract;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace BlogApp.WebApi.Controllers
 {
-    [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    [ApiController]
+    public class BlogController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ILogger<BlogController> _logger;
 
         private IBlogRepository _repository;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IBlogRepository repository)
+        public BlogController(ILogger<BlogController> logger, IBlogRepository repository)
         {
             _logger = logger;
             _repository = repository;
@@ -31,7 +27,7 @@ namespace BlogApp.WebApi.Controllers
         [HttpGet]
         public List<Blog> Get()
         {
-            return _repository.Blogs.ToList();
+            return _repository.GetAll().ToList();
         }
     }
 }

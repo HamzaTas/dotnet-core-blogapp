@@ -3,19 +3,26 @@ using BlogApp.Repository.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace BlogApp.Repository.Concrete.EntityFramework
 {
-    public class efBlogRepository : IBlogRepository
+    public class EfBlogRepository : EfGenericRepository<Blog>, IBlogRepository
     {
-        private BlogContext context;
-
-        public efBlogRepository(BlogContext _context)
+        public EfBlogRepository(BlogContext context):base(context)
         {
-            context = _context;
+
         }
 
-        public IQueryable<Blog> Blogs => context.Blogs;
+        public BlogContext BlogContext
+        {
+            get { return _context as BlogContext; }
+        }
+
+        public List<Blog> GetTop10Blogs()
+        {
+            return BlogContext.Blogs.OrderByDescending(x => x.BlogId).Take(5).ToList();
+        }
     }
 }
