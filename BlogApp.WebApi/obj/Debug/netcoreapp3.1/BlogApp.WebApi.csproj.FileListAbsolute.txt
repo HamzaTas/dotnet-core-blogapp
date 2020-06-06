@@ -30,8 +30,6 @@ C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\bin\
 C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\obj\Debug\netcoreapp3.1\BlogApp.WebApi.csprojAssemblyReference.cache
 C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\obj\Debug\netcoreapp3.1\BlogApp.WebApi.AssemblyInfoInputs.cache
 C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\obj\Debug\netcoreapp3.1\BlogApp.WebApi.AssemblyInfo.cs
-C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\obj\Debug\netcoreapp3.1\BlogApp.WebApi.csproj.CoreCompileInputs.cache
-C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\obj\Debug\netcoreapp3.1\BlogApp.WebApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\obj\Debug\netcoreapp3.1\BlogApp.WebApi.RazorTargetAssemblyInfo.cache
 C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\obj\Debug\netcoreapp3.1\staticwebassets\BlogApp.WebApi.StaticWebAssets.Manifest.cache
 C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\obj\Debug\netcoreapp3.1\staticwebassets\BlogApp.WebApi.StaticWebAssets.xml
@@ -78,3 +76,9 @@ C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\obj\
 C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.Design.dll
 C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\obj\Debug\netcoreapp3.1\BlogApp.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\obj\Debug\netcoreapp3.1\BlogApp.WebApi.MvcApplicationPartsAssemblyInfo.cache

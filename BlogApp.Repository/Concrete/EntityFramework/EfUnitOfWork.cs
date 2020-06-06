@@ -50,7 +50,6 @@ namespace BlogApp.Repository.Concrete.EntityFramework
             }
             catch (Exception)
             {
-
                 throw;
             }
         }

@@ -40,7 +40,7 @@ namespace BlogApp.Repository.Concrete.EntityFramework
                         Content = "With all the things I’ve been working with lately, I’ve still kept up to date on what’s new with ASP .NET Core for building Web Apps, Web APIs and even full-stack C# web applications with Blazor. With the release of ASP .NET Core 2.1, and the upcoming releases of 2.2 (late 2018) and 3.0 (2019), now is a great time to be an ASP .NET Core developer. But where should you begin? You have many options.",
                         IsApproved = true,
                         CreatedTime = DateTime.Now,
-                        UpdatedTime = DateTime.Now
+                        UpdatedTime = DateTime.Now,
                     },
                     new Blog ()
                     {
