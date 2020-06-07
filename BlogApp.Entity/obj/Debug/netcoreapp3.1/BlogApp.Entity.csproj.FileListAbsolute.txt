@@ -6,4 +6,3 @@ C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.Entity\obj\
 C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.Entity\obj\Debug\netcoreapp3.1\BlogApp.Entity.csproj.CoreCompileInputs.cache
 C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.Entity\obj\Debug\netcoreapp3.1\BlogApp.Entity.dll
 C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.Entity\obj\Debug\netcoreapp3.1\BlogApp.Entity.pdb
-C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.Entity\obj\Debug\netcoreapp3.1\BlogApp.Entity.csprojAssemblyReference.cache

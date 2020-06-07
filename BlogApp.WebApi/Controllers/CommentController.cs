@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using BlogApp.Entity;
 using BlogApp.Repository.Abstract;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -11,6 +12,7 @@ using Microsoft.Extensions.Logging;
 
 namespace BlogApp.WebApi.Controllers
 {
+    [Authorize]
     [Route("[controller]")]
     [ApiController]
     public class CommentController : ControllerBase

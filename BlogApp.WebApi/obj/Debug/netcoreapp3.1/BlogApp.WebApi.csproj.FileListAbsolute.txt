@@ -82,3 +82,4 @@ C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\bin\
 C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\obj\Debug\netcoreapp3.1\BlogApp.WebApi.csproj.CoreCompileInputs.cache
 C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\obj\Debug\netcoreapp3.1\BlogApp.WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\bin\Debug\netcoreapp3.1\ZNetCS.AspNetCore.Authentication.Basic.dll
