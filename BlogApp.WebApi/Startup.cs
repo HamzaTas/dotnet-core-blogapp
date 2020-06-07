@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using BlogApp.Repository.Abstract;
+using BlogApp.Repository.Cache;
 using BlogApp.Repository.Concrete.EntityFramework;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
@@ -47,11 +48,14 @@ namespace BlogApp.WebApi
                             options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
                         );
 
+            //In-Memory Cache
+            services.AddMemoryCache();
+
             //Authentication
             services.AddAuthentication(BasicAuthenticationDefaults.AuthenticationScheme).AddBasicAuthentication(
                      options =>
                      {
-                         options.Realm = "My Application";
+                         options.Realm = "Blog App";
                          options.Events = new BasicAuthenticationEvents
                          {
                              OnValidatePrincipal = context =>
@@ -89,7 +93,7 @@ namespace BlogApp.WebApi
             {
                 app.UseDeveloperExceptionPage();
             }
-
+                        
             FakeData.EnsurePopulated(app); // Control of pending migration automatically
 
             app.UseAuthentication(); //Authentication

@@ -4,11 +4,13 @@ using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 using BlogApp.Entity;
+using BlogApp.Repository;
 using BlogApp.Repository.Abstract;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 
 namespace BlogApp.WebApi.Controllers
@@ -22,16 +24,22 @@ namespace BlogApp.WebApi.Controllers
 
         private IUnitOfWork _unitOfWork;
 
-        public CategoryController(ILogger<CategoryController> logger, IUnitOfWork unitOfWork)
+        private readonly IMemoryCache _memCache;
+
+        public CategoryController(ILogger<CategoryController> logger, IUnitOfWork unitOfWork, IMemoryCache memoryCache)
         {
             _logger = logger;
             _unitOfWork = unitOfWork;
+            _memCache = memoryCache;
         }
 
         [HttpGet]
         public List<Category> Get()
         {
-            return _unitOfWork.Categories.GetAll().Include(c => c.BlogCategories).ToList();
+            if (!_memCache.TryGetValue(CacheKeys.CategoryKey, out List<Category> categories)) // if there are no data in cache get it from db
+                categories = _unitOfWork.Categories.GetAll().Include(c => c.BlogCategories).ToList();
+
+            return categories;
         }
 
         [HttpGet("{id}")]

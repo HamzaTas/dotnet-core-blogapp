@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using BlogApp.Entity;
+using BlogApp.Repository;
 using BlogApp.Repository.Abstract;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 
 namespace BlogApp.WebApi.Controllers
@@ -21,23 +23,29 @@ namespace BlogApp.WebApi.Controllers
 
         private IUnitOfWork _unitOfWork;
         private IBlogRepository _repository;
+        private readonly IMemoryCache _memCache;
 
-        public BlogController(ILogger<BlogController> logger, IBlogRepository repository, IUnitOfWork unitOfWork)
+        public BlogController(ILogger<BlogController> logger, IBlogRepository repository, IUnitOfWork unitOfWork, IMemoryCache memCache)
         {
             _logger = logger;
             _repository = repository;
             _unitOfWork = unitOfWork;
+            _memCache = memCache;
         }
 
         [HttpGet]
-        public List<Blog> Get()
+        public ActionResult Get()
         {
-            return _unitOfWork.Blogs.GetAll().Include(b=>b.Comments).Include(b=>b.BlogCategories).ToList();
+            if (!_memCache.TryGetValue(CacheKeys.BlogKey, out List<Blog> blogs)) // if there are no data in cache get it from db
+                blogs = _unitOfWork.Blogs.GetAll().Include(b => b.Comments).Include(b => b.BlogCategories).ToList();
+
+            return Ok(blogs);
         }
 
         [HttpGet("{id}")]
         public Blog Get(int id)
         {
+
             return _unitOfWork.Blogs.Get(id);
         }
 
