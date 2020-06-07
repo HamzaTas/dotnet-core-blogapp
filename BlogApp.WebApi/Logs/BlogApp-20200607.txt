@@ -26,3 +26,6 @@
 2020-06-07T20:09:25.8609095+03:00 8000010c-0005-fd00-b63f-84710c7967bb [INF] "Basic" was not authenticated. Failure message: "Authentication failed." (48071232)
 2020-06-07T20:09:25.8687743+03:00 8000010c-0005-fd00-b63f-84710c7967bb [INF] AuthenticationScheme: "Basic" was challenged. (d45f1f38)
 2020-06-07T20:09:33.3558530+03:00 800000c3-0002-fd00-b63f-84710c7967bb [INF] Get  (9fb5a16d)
+2020-06-07T20:43:38.9585983+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-06-07T20:43:38.9682770+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-06-07T20:43:38.9714524+03:00  [INF] Content root path: "C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi" (b5d60022)
