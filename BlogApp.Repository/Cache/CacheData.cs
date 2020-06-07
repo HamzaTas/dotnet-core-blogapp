@@ -60,7 +60,6 @@ namespace BlogApp.Repository.Cache
             _memCache.Remove(CacheKeys.BlogKey);
             _memCache.Remove(CacheKeys.CategoryKey);
             _memCache.Remove(CacheKeys.CommentKey);
-            _memCache.Remove(CacheKeys.UserKey);
         }
 
     }

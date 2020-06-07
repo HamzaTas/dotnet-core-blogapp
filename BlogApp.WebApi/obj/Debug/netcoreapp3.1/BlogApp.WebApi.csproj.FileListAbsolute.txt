@@ -80,6 +80,14 @@ C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\bin\
 C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\bin\Debug\netcoreapp3.1\ZNetCS.AspNetCore.Authentication.Basic.dll
 C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\obj\Debug\netcoreapp3.1\BlogApp.WebApi.csproj.CoreCompileInputs.cache
 C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\obj\Debug\netcoreapp3.1\BlogApp.WebApi.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\bin\Debug\netcoreapp3.1\ZNetCS.AspNetCore.Authentication.Basic.dll
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\obj\Debug\netcoreapp3.1\BlogApp.WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.dll
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\hamza.tas\Desktop\Core\Projects\dotnet-core-blogapp\BlogApp.WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
