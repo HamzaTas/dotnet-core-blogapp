@@ -39,7 +39,7 @@ Aşağıdaki teknolojiler ve tasarım desenleri kullanılarak hazırlanan makale
 
 Bu proje içerisindeki bir çok teknoloji ile daha profesyonel olarak bir deneyimim olmadı. Düzce Üniversitesi Bilgi İşlem Daire Başkanlığında Part Time Yazılım Geliştirici olarak çalıştığım dönemde .NET MVC üzerinde çeşitli projelerde görev aldım. .NET Core için .NET MVC temel mantığından farklı olmadığı düşüncesiyle yola çıktığım bu projede çoğu yerde farklılıklar olduğu gibi benzerliklerde olduğunu gözlemledim. Sonuç olarak deneyimin araştırmadan ve uygulayarak öğrenmeden geldiğini kavradığım için daha önce geliştirdiğim projelerden çok farklı bir yol izlemedim.  .NET Core için bir deneyimim omadığı için takıldığım kısımlarda "Proje geliştirilmesinde kullanılan kaynaklar" başlığındaki makele ve dokumantasyonlardan faydalandım. Bu makaleleri faydalı bulduğum için paylaşmak istedim. 
 
-**Daha Neler Yapılabilir veya yapılabilirdi?**
+**Daha Neler yapılabilirdi?**
 
 07.06.2020
 *   Bu proje için yapılabilecek en güzel şey Dependenciy Injection kısmında anlatıldığı gibi Cache yapısını bağımlılıktan doğan faciadan kurtarmak olacaktır. Cache yapısını bu yapıdan kurtardıktan sonra farklı bir cache mimarisi ile cache yapısını yeniden oluşturmak olacaktır. 
