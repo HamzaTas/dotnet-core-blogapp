@@ -28,10 +28,10 @@ Aşağıdaki teknolojiler ve tasarım desenleri kullanılarak hazırlanan makale
 # Proje geliştirilmesinde kullanılan kaynaklar
 
   - https://docs.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-3.1
-  - http://www.canertosuner.com/post/asp-net-core-in-memory-cache
   - https://www.blexin.com/en-US/Article/Blog/In-memory-caching-in-ASPNET-Core-45
   - https://jasonwatmore.com/post/2019/10/21/aspnet-core-3-basic-authentication-tutorial-with-example-api
   - https://sandervandevelde.wordpress.com/2018/01/06/adding-basic-authentication-to-asp-net-core-the-right-way/
   - https://docs.microsoft.com/en-us/aspnet/core/performance/caching/memory?view=aspnetcore-3.1
   - https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-3.1
   - https://code-maze.com/swagger-ui-asp-net-core-web-api/
+  - https://nblumhardt.com/2016/10/aspnet-core-file-logger/
