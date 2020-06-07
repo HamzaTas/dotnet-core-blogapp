@@ -1,0 +1,579 @@
+{
+	"id": "e5ee9da8-4022-3eab-e0ba-f844d2990bcc",
+	"name": "BlogApp",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Blogs",
+			"description": "",
+			"collectionId": "e5ee9da8-4022-3eab-e0ba-f844d2990bcc",
+			"order": [
+				"47ccf410-395f-494d-2cb9-7fcd77e96a55",
+				"f0855d67-d4b6-e572-060b-5674bc5aff37",
+				"96b77612-ba1a-2054-524e-7e0331d21cf0",
+				"817e377b-ed47-24bf-7d62-e27a801bd910",
+				"04f19754-7ebe-1281-c783-5a14f66aecdb"
+			],
+			"owner": "8692388",
+			"folders_order": [],
+			"id": "b4000932-4298-bd68-647a-df4b5a112329"
+		},
+		{
+			"name": "Cache",
+			"description": "",
+			"collectionId": "e5ee9da8-4022-3eab-e0ba-f844d2990bcc",
+			"order": [
+				"4d6fa78c-691f-dbe1-e4c0-d2854d8cba06"
+			],
+			"owner": "8692388",
+			"folders_order": [],
+			"id": "39aab285-25ed-3e2d-cd17-03c7ef75c4a6"
+		},
+		{
+			"name": "Categories",
+			"description": "",
+			"collectionId": "e5ee9da8-4022-3eab-e0ba-f844d2990bcc",
+			"order": [
+				"a0461c52-6fe8-748a-443f-8968ec5be254",
+				"a23d7d31-9f2d-27ed-693e-89b05c0c30b2",
+				"a137856a-8b78-4fb3-067c-ff760f11e045",
+				"1fcf4c57-b77f-a023-28b2-742b39fd417b",
+				"abf3e397-607f-076b-aa47-b8bc0d5b7254"
+			],
+			"owner": "8692388",
+			"folders_order": [],
+			"id": "130c010c-effa-c54b-34f8-8206c7d4e1d8"
+		},
+		{
+			"name": "Comments",
+			"description": "",
+			"collectionId": "e5ee9da8-4022-3eab-e0ba-f844d2990bcc",
+			"order": [
+				"4827dbb9-3768-4512-034c-f3e96e2ec7f8",
+				"52eec442-7c99-8abc-e91b-b8dfe8e95ee4",
+				"354d208b-a906-9d2a-c96f-56af41aef35d",
+				"f497428a-8522-4569-6696-269022d8992e",
+				"3d31a5ca-6074-f241-8d08-d810b8b90322"
+			],
+			"owner": "8692388",
+			"folders_order": [],
+			"id": "02a18ac8-2d93-4dde-fcd3-5a2ceb647c29"
+		}
+	],
+	"folders_order": [
+		"b4000932-4298-bd68-647a-df4b5a112329",
+		"02a18ac8-2d93-4dde-fcd3-5a2ceb647c29",
+		"130c010c-effa-c54b-34f8-8206c7d4e1d8",
+		"39aab285-25ed-3e2d-cd17-03c7ef75c4a6"
+	],
+	"timestamp": 1591466379676,
+	"owner": "8692388",
+	"public": false,
+	"requests": [
+		{
+			"id": "04f19754-7ebe-1281-c783-5a14f66aecdb",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:62140/blog/7",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "e5ee9da8-4022-3eab-e0ba-f844d2990bcc",
+			"data": null,
+			"dataMode": "params",
+			"name": "Delete",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1591475330771,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "b4000932-4298-bd68-647a-df4b5a112329"
+		},
+		{
+			"id": "1fcf4c57-b77f-a023-28b2-742b39fd417b",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:62140/category/4",
+			"folder": "130c010c-effa-c54b-34f8-8206c7d4e1d8",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1591475843923,
+			"name": "Update",
+			"description": "",
+			"collectionId": "e5ee9da8-4022-3eab-e0ba-f844d2990bcc",
+			"responses": [],
+			"rawModeData": " {\n        \"categoryName\": \"c#\",\n        \"description\": \"Most valuable articles about c^#\",\n        \"createdTime\": \"0001-01-01T00:00:00\",\n        \"updatedTime\": \"0001-01-01T00:00:00\"\n }"
+		},
+		{
+			"id": "354d208b-a906-9d2a-c96f-56af41aef35d",
+			"headers": "Content-Type: application/json\nAuthorization: Basic aGFtemF0YXM6cGFzc3dvcmQ=\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic aGFtemF0YXM6cGFzc3dvcmQ=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:62140/comment",
+			"folder": "02a18ac8-2d93-4dde-fcd3-5a2ceb647c29",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1591549798513,
+			"name": "Add",
+			"description": "",
+			"collectionId": "e5ee9da8-4022-3eab-e0ba-f844d2990bcc",
+			"responses": [],
+			"rawModeData": "{\r\n    \"name\": \"Hamza\",\r\n    \"surname\": \"Taş\",\r\n    \"email\": \"hamza.tas610@gmail.com\",\r\n    \"webSite\": null,\r\n    \"content\": \"Yep, exciting times ahead with ASP .NET Core!\",\r\n    \"blogId\": 1,\r\n    \"blog\": null\r\n}"
+		},
+		{
+			"id": "3d31a5ca-6074-f241-8d08-d810b8b90322",
+			"headers": "Authorization: Basic aGFtemF0YXM6cGFzc3dvcmQ=\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic aGFtemF0YXM6cGFzc3dvcmQ=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:62140/comment/6",
+			"folder": "02a18ac8-2d93-4dde-fcd3-5a2ceb647c29",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1591549801420,
+			"name": "Delete",
+			"description": "",
+			"collectionId": "e5ee9da8-4022-3eab-e0ba-f844d2990bcc",
+			"responses": []
+		},
+		{
+			"id": "47ccf410-395f-494d-2cb9-7fcd77e96a55",
+			"headers": "Content-Type: application/xml\nAuthorization: Basic aGFtemF0YXM6cGFzc3dvcmRnZmdkZmc=\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/xml",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic aGFtemF0YXM6cGFzc3dvcmRnZmdkZmc=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:62140/blog",
+			"folder": "b4000932-4298-bd68-647a-df4b5a112329",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1591549810476,
+			"name": "GetAll",
+			"description": "",
+			"collectionId": "e5ee9da8-4022-3eab-e0ba-f844d2990bcc",
+			"responses": []
+		},
+		{
+			"id": "4827dbb9-3768-4512-034c-f3e96e2ec7f8",
+			"headers": "Content-Type: application/xml\nAuthorization: Basic aGFtemF0YXM6cGFzc3dvcmQ=\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/xml",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic aGFtemF0YXM6cGFzc3dvcmQ=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:62140/comment",
+			"folder": "02a18ac8-2d93-4dde-fcd3-5a2ceb647c29",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1591549806907,
+			"name": "GetAll",
+			"description": "",
+			"collectionId": "e5ee9da8-4022-3eab-e0ba-f844d2990bcc",
+			"responses": []
+		},
+		{
+			"id": "4d6fa78c-691f-dbe1-e4c0-d2854d8cba06",
+			"headers": "Content-Type: application/xml\nAuthorization: Basic aGFtemF0YXM6cGFzc3dvcmQ=\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/xml",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic aGFtemF0YXM6cGFzc3dvcmQ=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:62140/swagger/v1/swagger.json",
+			"folder": "39aab285-25ed-3e2d-cd17-03c7ef75c4a6",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1591549796221,
+			"name": "GetAll",
+			"description": "",
+			"collectionId": "e5ee9da8-4022-3eab-e0ba-f844d2990bcc",
+			"responses": []
+		},
+		{
+			"id": "52eec442-7c99-8abc-e91b-b8dfe8e95ee4",
+			"headers": "Content-Type: application/xml\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/xml",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:62140/comment/1",
+			"folder": "02a18ac8-2d93-4dde-fcd3-5a2ceb647c29",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1591475857583,
+			"name": "GetSingle",
+			"description": "",
+			"collectionId": "e5ee9da8-4022-3eab-e0ba-f844d2990bcc",
+			"responses": []
+		},
+		{
+			"id": "817e377b-ed47-24bf-7d62-e27a801bd910",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:62140/blog/5",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "e5ee9da8-4022-3eab-e0ba-f844d2990bcc",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Update",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1591468323629,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "b4000932-4298-bd68-647a-df4b5a112329",
+			"rawModeData": "{\r\n\"title\": \"Hello, ASP .NET Core!\",\r\n\"description\": \"test data\",\r\n\"content\": \"With all the things I’ve been working with lately, I’ve still kept up to date on what’s new with ASP .NET Core for building Web Apps, Web APIs and even full-stack C# web applications with Blazor. With the release of ASP .NET Core 2.1, and the upcoming releases of 2.2 (late 2018) and 3.0 (2019), now is a great time to be an ASP .NET Core developer. But where should you begin? You have many options.\",\r\n\"createdTime\": \"2020-06-06T13:33:02.9443276\",\r\n\"updatedTime\": \"2020-06-06T13:33:02.9455202\",\r\n\"isApproved\": true,\r\n\"blogCategories\": null,\r\n\"comments\": null\r\n}"
+		},
+		{
+			"id": "96b77612-ba1a-2054-524e-7e0331d21cf0",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:62140/blog",
+			"folder": "b4000932-4298-bd68-647a-df4b5a112329",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1591475831120,
+			"name": "Add",
+			"description": "",
+			"collectionId": "e5ee9da8-4022-3eab-e0ba-f844d2990bcc",
+			"responses": [],
+			"rawModeData": "{\r\n\"title\": \"Hello, ASP .NET Core!\",\r\n\"description\": \"here’s the first of a new series of posts. The topic: ASP .NET Core!\",\r\n\"content\": \"With all the things I’ve been working with lately, I’ve still kept up to date on what’s new with ASP .NET Core for building Web Apps, Web APIs and even full-stack C# web applications with Blazor. With the release of ASP .NET Core 2.1, and the upcoming releases of 2.2 (late 2018) and 3.0 (2019), now is a great time to be an ASP .NET Core developer. But where should you begin? You have many options.\",\r\n\"createdTime\": \"2020-06-06T13:33:02.9443276\",\r\n\"updatedTime\": \"2020-06-06T13:33:02.9455202\",\r\n\"isApproved\": true,\r\n\"blogCategories\": null,\r\n\"comments\": null\r\n}"
+		},
+		{
+			"id": "a0461c52-6fe8-748a-443f-8968ec5be254",
+			"headers": "Content-Type: application/xml\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/xml",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:62140/category",
+			"folder": "130c010c-effa-c54b-34f8-8206c7d4e1d8",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1591475847613,
+			"name": "GetAll",
+			"description": "",
+			"collectionId": "e5ee9da8-4022-3eab-e0ba-f844d2990bcc",
+			"responses": []
+		},
+		{
+			"id": "a137856a-8b78-4fb3-067c-ff760f11e045",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:62140/category",
+			"folder": "130c010c-effa-c54b-34f8-8206c7d4e1d8",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1591475841606,
+			"name": "Add",
+			"description": "",
+			"collectionId": "e5ee9da8-4022-3eab-e0ba-f844d2990bcc",
+			"responses": [],
+			"rawModeData": " {\n        \"categoryName\": \"c#\",\n        \"description\": \"Most valuable articles about c^#\",\n        \"createdTime\": \"0001-01-01T00:00:00\",\n        \"updatedTime\": \"0001-01-01T00:00:00\"\n }"
+		},
+		{
+			"id": "a23d7d31-9f2d-27ed-693e-89b05c0c30b2",
+			"headers": "Content-Type: application/xml\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/xml",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:62140/category/1",
+			"folder": "130c010c-effa-c54b-34f8-8206c7d4e1d8",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1591475845749,
+			"name": "GetSingle",
+			"description": "",
+			"collectionId": "e5ee9da8-4022-3eab-e0ba-f844d2990bcc",
+			"responses": []
+		},
+		{
+			"id": "abf3e397-607f-076b-aa47-b8bc0d5b7254",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:62140/category/4",
+			"folder": "130c010c-effa-c54b-34f8-8206c7d4e1d8",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1591475859632,
+			"name": "Delete",
+			"description": "",
+			"collectionId": "e5ee9da8-4022-3eab-e0ba-f844d2990bcc",
+			"responses": []
+		},
+		{
+			"id": "f0855d67-d4b6-e572-060b-5674bc5aff37",
+			"headers": "Content-Type: application/xml\nAuthorization: Basic aGFtemF0YXM6cGFzc3dvcmQ=\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/xml",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic aGFtemF0YXM6cGFzc3dvcmQ=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:62140/blog/1",
+			"folder": "b4000932-4298-bd68-647a-df4b5a112329",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1591549808687,
+			"name": "GetSingle",
+			"description": "",
+			"collectionId": "e5ee9da8-4022-3eab-e0ba-f844d2990bcc",
+			"responses": []
+		},
+		{
+			"id": "f497428a-8522-4569-6696-269022d8992e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:62140/comment/3",
+			"folder": "02a18ac8-2d93-4dde-fcd3-5a2ceb647c29",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1591475852967,
+			"name": "Update",
+			"description": "",
+			"collectionId": "e5ee9da8-4022-3eab-e0ba-f844d2990bcc",
+			"responses": [],
+			"rawModeData": "{\r\n    \"name\": \"Hamza\",\r\n    \"surname\": \"Taş\",\r\n    \"email\": \"hamza.tas610@gmail.com\",\r\n    \"webSite\": null,\r\n    \"content\": \"Yep, exciting times ahead with ASP .NET Core!\",\r\n    \"blogId\": 1,\r\n    \"blog\": null\r\n}"
+		}
+	]
+}

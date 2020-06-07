@@ -45,6 +45,7 @@ namespace BlogApp.WebApi.Controllers
         [HttpGet("{id}")]
         public Category Get(int id)
         {
+            _logger.LogInformation("Get ", id);
             return _unitOfWork.Categories.Get(id);
         }
 
@@ -53,6 +54,8 @@ namespace BlogApp.WebApi.Controllers
         {
             _unitOfWork.Categories.Add(category);
             _unitOfWork.SaveChanges();
+            
+            _logger.LogInformation("Added ", category.CategoryId);
 
             return CreatedAtAction("Get", new { id = category.CategoryId }, category);
         }
@@ -76,6 +79,8 @@ namespace BlogApp.WebApi.Controllers
             _category.Description = category.Description;
             _unitOfWork.SaveChanges();
 
+            _logger.LogInformation("Updated ", id);
+
             return NoContent();
         }
 
@@ -89,6 +94,9 @@ namespace BlogApp.WebApi.Controllers
 
             _unitOfWork.Comments.Remove(_blog);
             _unitOfWork.SaveChanges();
+
+            _logger.LogInformation("Deleted ", id);
+
             return NoContent();
         }
     }

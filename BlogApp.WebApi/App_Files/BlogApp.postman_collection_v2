@@ -1,0 +1,338 @@
+{
+	"variables": [],
+	"info": {
+		"name": "BlogApp",
+		"_postman_id": "e5ee9da8-4022-3eab-e0ba-f844d2990bcc",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Blogs",
+			"description": "",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"url": "http://localhost:62140/blog",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic aGFtemF0YXM6cGFzc3dvcmRnZmdkZmc=",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "GetSingle",
+					"request": {
+						"url": "http://localhost:62140/blog/1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic aGFtemF0YXM6cGFzc3dvcmQ=",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"url": "http://localhost:62140/blog",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"title\": \"Hello, ASP .NET Core!\",\r\n\"description\": \"here’s the first of a new series of posts. The topic: ASP .NET Core!\",\r\n\"content\": \"With all the things I’ve been working with lately, I’ve still kept up to date on what’s new with ASP .NET Core for building Web Apps, Web APIs and even full-stack C# web applications with Blazor. With the release of ASP .NET Core 2.1, and the upcoming releases of 2.2 (late 2018) and 3.0 (2019), now is a great time to be an ASP .NET Core developer. But where should you begin? You have many options.\",\r\n\"createdTime\": \"2020-06-06T13:33:02.9443276\",\r\n\"updatedTime\": \"2020-06-06T13:33:02.9455202\",\r\n\"isApproved\": true,\r\n\"blogCategories\": null,\r\n\"comments\": null\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"url": "http://localhost:62140/blog/5",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"title\": \"Hello, ASP .NET Core!\",\r\n\"description\": \"test data\",\r\n\"content\": \"With all the things I’ve been working with lately, I’ve still kept up to date on what’s new with ASP .NET Core for building Web Apps, Web APIs and even full-stack C# web applications with Blazor. With the release of ASP .NET Core 2.1, and the upcoming releases of 2.2 (late 2018) and 3.0 (2019), now is a great time to be an ASP .NET Core developer. But where should you begin? You have many options.\",\r\n\"createdTime\": \"2020-06-06T13:33:02.9443276\",\r\n\"updatedTime\": \"2020-06-06T13:33:02.9455202\",\r\n\"isApproved\": true,\r\n\"blogCategories\": null,\r\n\"comments\": null\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"url": "http://localhost:62140/blog/7",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comments",
+			"description": "",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"url": "http://localhost:62140/comment",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic aGFtemF0YXM6cGFzc3dvcmQ=",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "GetSingle",
+					"request": {
+						"url": "http://localhost:62140/comment/1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"url": "http://localhost:62140/comment",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic aGFtemF0YXM6cGFzc3dvcmQ=",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Hamza\",\r\n    \"surname\": \"Taş\",\r\n    \"email\": \"hamza.tas610@gmail.com\",\r\n    \"webSite\": null,\r\n    \"content\": \"Yep, exciting times ahead with ASP .NET Core!\",\r\n    \"blogId\": 1,\r\n    \"blog\": null\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"url": "http://localhost:62140/comment/3",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Hamza\",\r\n    \"surname\": \"Taş\",\r\n    \"email\": \"hamza.tas610@gmail.com\",\r\n    \"webSite\": null,\r\n    \"content\": \"Yep, exciting times ahead with ASP .NET Core!\",\r\n    \"blogId\": 1,\r\n    \"blog\": null\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"url": "http://localhost:62140/comment/6",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic aGFtemF0YXM6cGFzc3dvcmQ=",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"description": "",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"url": "http://localhost:62140/category",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "GetSingle",
+					"request": {
+						"url": "http://localhost:62140/category/1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"url": "http://localhost:62140/category",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"categoryName\": \"c#\",\n        \"description\": \"Most valuable articles about c^#\",\n        \"createdTime\": \"0001-01-01T00:00:00\",\n        \"updatedTime\": \"0001-01-01T00:00:00\"\n }"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"url": "http://localhost:62140/category/4",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"categoryName\": \"c#\",\n        \"description\": \"Most valuable articles about c^#\",\n        \"createdTime\": \"0001-01-01T00:00:00\",\n        \"updatedTime\": \"0001-01-01T00:00:00\"\n }"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"url": "http://localhost:62140/category/4",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cache",
+			"description": "",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"url": "http://localhost:62140/swagger/v1/swagger.json",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic aGFtemF0YXM6cGFzc3dvcmQ=",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

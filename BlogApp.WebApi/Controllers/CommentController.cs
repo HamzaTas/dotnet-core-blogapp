@@ -6,7 +6,6 @@ using BlogApp.Entity;
 using BlogApp.Repository;
 using BlogApp.Repository.Abstract;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
@@ -44,6 +43,7 @@ namespace BlogApp.WebApi.Controllers
         [HttpGet("{id}")]
         public Comment Get(int id)
         {
+            _logger.LogInformation("Get ", id);
             return _unitOfWork.Comments.Get(id);
         }
 
@@ -52,6 +52,8 @@ namespace BlogApp.WebApi.Controllers
         {
             _unitOfWork.Comments.Add(comment);
             _unitOfWork.SaveChanges();
+
+            _logger.LogInformation("Added ", comment.BlogId);
 
             return CreatedAtAction("Get", new { id = comment.BlogId }, comment);
         }
@@ -75,6 +77,8 @@ namespace BlogApp.WebApi.Controllers
             _comment.WebSite = comment.WebSite;
             _unitOfWork.SaveChanges();
 
+            _logger.LogInformation("Updated ", id);
+
             return NoContent();
         }
 
@@ -88,6 +92,9 @@ namespace BlogApp.WebApi.Controllers
 
             _unitOfWork.Comments.Remove(_blog);
             _unitOfWork.SaveChanges();
+
+            _logger.LogInformation("Deleted ", id);
+
             return NoContent();
         }
     }

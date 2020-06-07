@@ -32,22 +32,19 @@ namespace BlogApp.Repository.Cache
                 Priority = CacheItemPriority.Normal
             };
 
-            List<Blog> blogs = new List<Blog>();
-            if (!_memCache.TryGetValue(CacheKeys.BlogKey, out blogs))
+            if (!_memCache.TryGetValue(CacheKeys.BlogKey, out List<Blog> blogs))
             {
                 blogs = _unitOfWork.Blogs.GetAll().Include(b => b.Comments).Include(b => b.BlogCategories).ToList();
                 _memCache.Set(CacheKeys.BlogKey, blogs, cacheExpOptions);
             }
 
-            List<Category> categories = new List<Category>();
-            if (!_memCache.TryGetValue(CacheKeys.CategoryKey, out categories))
+            if (!_memCache.TryGetValue(CacheKeys.CategoryKey, out List<Category> categories))
             {
                 categories = _unitOfWork.Categories.GetAll().ToList();
                 _memCache.Set(CacheKeys.CategoryKey, categories, cacheExpOptions);
             }
 
-            List<Comment> comments = new List<Comment>();
-            if (!_memCache.TryGetValue(CacheKeys.BlogKey, out comments))
+            if (!_memCache.TryGetValue(CacheKeys.BlogKey, out List<Comment> comments))
             {
                 comments = _unitOfWork.Comments.GetAll().ToList();
                 _memCache.Set(CacheKeys.CommentKey, comments, cacheExpOptions);

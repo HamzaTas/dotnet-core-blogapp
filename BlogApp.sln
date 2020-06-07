@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogApp.WebApi", "BlogApp.WebApi\BlogApp.WebApi.csproj", "{86E86C05-44C3-406F-B03F-6B6C34BFE481}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogApp.WebApi", "BlogApp.WebApi\BlogApp.WebApi.csproj", "{86E86C05-44C3-406F-B03F-6B6C34BFE481}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogApp.Repository", "BlogApp.Repository\BlogApp.Repository.csproj", "{69BCAEDF-860B-4C41-94CA-3BF12275C075}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogApp.Repository", "BlogApp.Repository\BlogApp.Repository.csproj", "{69BCAEDF-860B-4C41-94CA-3BF12275C075}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogApp.Entity", "BlogApp.Entity\BlogApp.Entity.csproj", "{82C33A52-425E-41DE-94E7-E2E6C800E1D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogApp.Entity", "BlogApp.Entity\BlogApp.Entity.csproj", "{82C33A52-425E-41DE-94E7-E2E6C800E1D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

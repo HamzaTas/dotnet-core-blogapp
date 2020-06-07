@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BlogApp.Entity
 {
-    public class Blog
+    public class Blog:IEntity
     {
         public int BlogId { get; set; }
         public string Title { get; set; }

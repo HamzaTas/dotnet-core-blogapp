@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Text.Json;
 using System.Threading.Tasks;
 using BlogApp.Entity;
 using BlogApp.Repository;
@@ -22,13 +23,11 @@ namespace BlogApp.WebApi.Controllers
         private readonly ILogger<BlogController> _logger;
 
         private IUnitOfWork _unitOfWork;
-        private IBlogRepository _repository;
         private readonly IMemoryCache _memCache;
 
-        public BlogController(ILogger<BlogController> logger, IBlogRepository repository, IUnitOfWork unitOfWork, IMemoryCache memCache)
+        public BlogController(ILogger<BlogController> logger, IUnitOfWork unitOfWork, IMemoryCache memCache)
         {
             _logger = logger;
-            _repository = repository;
             _unitOfWork = unitOfWork;
             _memCache = memCache;
         }
@@ -45,6 +44,7 @@ namespace BlogApp.WebApi.Controllers
         [HttpGet("{id}")]
         public Blog Get(int id)
         {
+            _logger.LogInformation("Get ", id);
 
             return _unitOfWork.Blogs.Get(id);
         }
@@ -54,6 +54,8 @@ namespace BlogApp.WebApi.Controllers
         {
             _unitOfWork.Blogs.Add(blog);
             _unitOfWork.SaveChanges();
+
+            _logger.LogInformation("Added ", blog.BlogId);
 
             return CreatedAtAction("Get", new { id = blog.BlogId }, blog);
         }
@@ -79,6 +81,8 @@ namespace BlogApp.WebApi.Controllers
             _blog.UpdatedTime = DateTime.Now;
             _unitOfWork.SaveChanges();
 
+            _logger.LogInformation("Updated ", id);
+
             return NoContent();
         }
 
@@ -92,6 +96,9 @@ namespace BlogApp.WebApi.Controllers
 
             _unitOfWork.Blogs.Remove(_blog);
             _unitOfWork.SaveChanges();
+
+            _logger.LogInformation("Deleted ", id);
+
             return NoContent();
         }
 

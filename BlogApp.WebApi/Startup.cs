@@ -94,7 +94,7 @@ namespace BlogApp.WebApi
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactor)
         {
             if (env.IsDevelopment())
             {
@@ -114,6 +114,8 @@ namespace BlogApp.WebApi
             FakeData.EnsurePopulated(app); // Control of pending migration automatically
 
             app.UseAuthentication(); //Authentication
+
+            loggerFactor.AddFile("Logs/BlogApp-{Date}.txt");
 
             app.UseRouting();
 
