@@ -1,6 +1,6 @@
 # BlogApp Uygulaması
 
-![N|Solid](https://www.theserverside.technology/wp-content/uploads/2019/05/asp-net-core-identity-with-patterns-1000x534.jpg)
+![N|Solid](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIkY5SQiJnas8-1-o31zSIAjFEHNtDZCVqFw&usqp=CAU)
 
 Aşağıdaki teknolojiler ve tasarım desenleri kullanılarak hazırlanan makale uygulamaları için Rest Api Projesi
 
